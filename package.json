@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Cool book app",
   "main": "app.js",
+  "type": "module",
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "live-server",
+    "build": "rollup -c --watch"
   },
   "repository": {
     "type": "git",
@@ -16,7 +19,15 @@
   "author": "Iryna Mishchanka",
   "license": "ISC",
   "bugs": {
-    "url":"https://github.com/Irinamiszczanka/Project-Book/issues"
- },
-  "homepage":"https://github.com/Irinamiszczanka/Project-Book#readme"
+    "url": "https://github.com/Irinamiszczanka/Project-Book/issues"
+  },
+  "homepage": "https://github.com/Irinamiszczanka",
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "eslint": "^9.10.0",
+    "globals": "^15.9.0",
+    "rollup": "^4.21.2",
+    "rollup-plugin-import-css": "^3.5.1"
+  }
 }
